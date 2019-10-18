@@ -1,4 +1,4 @@
-// Exporting an object containing all of our models
+// Exporting our models in an object
 
 module.exports = {
     Run: require("./run"),
