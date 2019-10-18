@@ -20,8 +20,6 @@ function formatTime(){
 
     }
     
-
-
 function postRun(newRun) {
  
     $.post('/api/run', newRun)
@@ -33,7 +31,4 @@ function postRun(newRun) {
       });
   }
 
-
-
-
-$submitRun.on('click', postRun);
+$submitRun.on('click', formatTime);
