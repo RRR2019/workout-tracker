@@ -1,7 +1,7 @@
 # workout-tracker
 
 ## Description
-Workout Tracker application to view create and track daily workouts: Runnging and Bench Press. Mongo database with a Mongoose schema.
+Workout Tracker application to view create and track daily workouts: Running and Bench Press. Mongo database with a Mongoose schema.
 
 ## Technology Used
 * Node.js
