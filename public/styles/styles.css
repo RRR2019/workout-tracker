@@ -12,14 +12,22 @@
     margin-top: 5em;
 }
 
+#runCard{
+    width: 10rem;
+}
+
+#benchCard{
+    width: 13rem;
+}
+
 #allCards{
-    text-align: center;
-     
+    text-align: center;  
 }
 
 .fas{
     color: #004d66;
 }
+
 .fas:hover{
     color: #00ace6;
 }
