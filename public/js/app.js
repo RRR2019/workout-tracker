@@ -3,7 +3,12 @@ const $minutes = $('#minutes')
 const $seconds = $('#seconds')
 const $distance =$('#distance')
 const $submitRun =$('#submitRun');
+const $weight = $('#weight');
+const $repetitions = $('#repetitions')
+const $submitBench =$('#submitBench');
 let newTime;
+let newPress;
+
 
 function formatTime(){
   const hours = $hours.val().trim();
@@ -31,4 +36,19 @@ function postRun(newRun) {
       });
   }
 
+function postBench() {
+  newPress = {
+    weight: $weight.val().trim(),
+    repetitions: $repetitions.val().trim()
+  }
+  $.post('/api/bench', newPress)
+  .then((data) => {
+    window.location.reload(true);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+}
+
 $submitRun.on('click', formatTime);
+$submitBench.on('click', postBench);

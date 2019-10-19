@@ -1,3 +1,26 @@
 #title{
-    font-family: 'Modak', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 5em;
+    color: #002633;
+    margin-top: .5em
 }
+
+#runCard, #benchCard{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+#allCards{
+    text-align: center;
+     
+}
+
+.fas{
+    color: #004d66;
+}
+.fas:hover{
+    color: #00ace6;
+}
+
