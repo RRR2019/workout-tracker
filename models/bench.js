@@ -1,6 +1,7 @@
+//require mongoose
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
+//create BenchSchema with weight, repetitions and created date.
 const  BenchSchema = new Schema({
   weight: Number,
   repetitions: Number,
@@ -8,5 +9,5 @@ const  BenchSchema = new Schema({
 });
 
 const Bench = mongoose.model("Bench", BenchSchema);
-
+//export Bench 
 module.exports = Bench;
